@@ -3,10 +3,11 @@ import {useDispatch} from 'react-redux';
 import {toggleRead} from '../store/booksSlice.js';
 
 function Book({book}) {
-    
+
     const dispatch = useDispatch();
     
     function handleToggleRead(e, id, isRead) {
+        
         e.preventDefault();
         dispatch(toggleRead({ id, isRead }));
     }
