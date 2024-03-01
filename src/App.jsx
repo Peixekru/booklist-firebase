@@ -5,12 +5,11 @@ import LoginPage from './views/LoginPage.jsx';
 import AddBookPage from './views/AddBookPage.jsx';
 import { selectUsers } from './store/usersSlice.js';
 import { useSelector } from 'react-redux';
-import { useState } from 'react';
 
 function App() {
 
+
   const users = useSelector(selectUsers);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <>  
